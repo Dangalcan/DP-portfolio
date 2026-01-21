@@ -1,0 +1,45 @@
+\documentclass[12pt]{report}
+
+% Paquetes LaTeX y estilos globales
+\input{etc/pkgs}
+\input{etc/style}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Variables para la portada
+\setTitle{Portfolio Dirección de Proyectos 2025/2026}
+\setAuthor{Autor1 \\ Autor2 \\ ... }
+\setSubject{Dirección de Proyectos}
+\setDegree{Máster en Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Comienzo del documento
+\begin{document}
+
+    % Portada y secciones no numeradas
+    \input{sections/00_Portada}
+    \input{sections/00_Resumen}
+    
+    % Índice del documento y de figuras
+    \begingroup
+        % Los enlaces son normalmente azules, pero en los índices se configuran a negro para que no aparezca todo azul
+        \hypersetup{linkcolor=black}
+        \tableofcontents
+        \listoffigures
+        \listoftables
+    \endgroup
+    
+    % Cambia el estilo de números de página de romanos a normal
+    \clearpage\pagenumbering{arabic}
+    
+    % Capítulos del trabajo
+    \input{sections/01_Introduccion.tex}
+    \input{sections/02_PresentacionPersonal.tex}
+    \input{sections/XX_SesionX.tex}
+    \input{sections/XX_Autoevaluacion.tex}
+    \input{sections/XX_ReflexionesFinales.tex}
+    \input{sections/XX_UsoDeIA.tex}
+
+% Fin del documento
+\end{document}

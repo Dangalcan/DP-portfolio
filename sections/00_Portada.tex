@@ -1,0 +1,52 @@
+\thispagestyle{empty} % Impide que se incluya número de página en la portada
+\begin{center}
+
+\vspace*{1cm}
+
+\includegraphics[width=\textwidth]{figures/etsii_us.png}
+
+\vspace*{1.5cm}
+\begin{large}
+
+\end{large}
+
+\vspace*{0.1in}
+\textbf{\huge \tfgTitle}
+
+\vspace*{.75cm}
+
+\includegraphics[width=0.6\textwidth]{figures/memoryCover.jpg}
+\vspace*{1cm}
+
+{\large Realizado por}\\
+\textbf{\Large \tfgAuthors}
+
+\vspace*{0.25cm}
+
+\textbf{Para la asignatura}\\
+{\large \tfgSubject}\\
+
+\vspace*{0.2in}
+
+\textbf{Dentro del}\\
+{\large \tfgDegree}\\
+
+\vspace*{0.2in}
+
+
+\end{center}
+
+% Dedicatoria
+\ifdefined\tfgDedication
+    \newpage
+    \thispagestyle{empty}
+    
+    \vspace*{\fill}
+    \begin{center}
+    \textit{\tfgDedication}
+    \end{center}
+    \vspace*{\fill}
+\fi
+
+\clearpage\setcounter{page}{1} % Comienza a incluir números de página a partir de aquí
+\pagenumbering{roman} % En números romanos
